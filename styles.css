@@ -1,0 +1,278 @@
+img {
+  display: inline;
+}
+img:focus {
+  outline: 0;
+}
+body{
+  font-family: 'Alfa Slab One', cursive;
+}
+h3,h4, p{
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+}
+p{
+ font-size: 18px; 
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2rem;
+}
+h1,h2,h3,h4{
+  display:block !important;
+  width:100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  padding-left: 12px;
+  list-style-type: none;
+}
+
+/*cabecera*/
+.logo-principal{
+  width: 25%;
+  margin: auto;
+  display: flex;
+}
+h1{
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  font-size: 5rem;
+
+}
+.goat-separator{
+  border-top: 4px solid #188A2E;
+  width: 250px;
+  margin-bottom: 2rem;
+margin-left: auto;
+  margin-right: auto;
+
+}
+.goat-separator-animation{
+ animation: fadeInUp 1s ease-in-out 0s forwards; 
+}
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+h2{
+   margin-bottom: 0.3rem; 
+  margin-top: 1.5rem;
+}
+
+/*navbar*/
+header .navbar{
+  background-color: transparent;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active{
+  color:#188A2E !important;
+}
+.navbar.fixed-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  background-color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-bg{
+   background-color: #000;
+  width: 100%;
+    padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-bg .navbar-dark .navbar-nav .show > .nav-link, .navbar-bg .navbar-dark .navbar-nav .active > .nav-link, .navbar-bg .navbar-dark .navbar-nav .nav-link.show, .navbar-bg .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+  color: #FFF;
+  font-weight:500;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+/*what*/
+iframe{
+  margin-top:2rem;
+}
+.portfolio{
+  margin-bottom: 5rem;
+}
+.logo-title{
+  color: #188A2E;
+}
+/*card*/
+/*.card .btn-secondary{
+  background-color:#188A2E;
+  font-family: 'Open Sans', sans-serif;
+  border: 0px solid #FFF;
+}
+.card .btn-secondary:hover{
+  background-color: #000;
+}*/
+.card{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card p{
+  text-align: left;
+}
+.google_badge{
+  width: 60%;
+}
+/*how*/
+.btn-secondary{
+  background-color:#188A2E;
+  margin:auto;
+  display: flex;
+  border: 0px solid #FFF;
+  margin-top: 1rem;
+}
+.btn-secondary:hover{
+  background-color: #000;
+}
+.ir-arriba{
+  display: none;
+  padding: 0.9375rem 1.25rem;
+  background: #188A2E;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 10;
+}
+.fa-angle-up:before {
+    content: "\f106";
+}
+.navbar{
+  justify-content: flex-end;
+}
+/*footer*/
+.footer-container{
+  background-color: #000;
+    overflow: hidden;
+  width: 100%;
+    display: flex;
+  justify-content: center;
+}
+.footer-container a{
+  color: #188A2E;
+}
+.footer-container figure{
+      display: flex;
+  justify-content: center;
+}
+.footer-container .logo{
+  width: 200px;
+  height: 222px;
+  margin-top: 1rem;
+
+}
+.footer-container p{
+  color: #FFF;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+
+.footer-buttons a{
+  color: #FFF;
+  font-size: 28px;
+}
+
+.footer-buttons i{
+  margin-left: 10px;
+}
+.footer-buttons a:first-of-type i{
+  margin-left: 0px;
+}
+
+.footer-container .subtitle-footer.g-attr{
+  width: 75%;
+}
+
+/* contact me */
+.contact-form{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-form .form-control{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-me .contact-p{
+  max-width: 600px;
+} 
+
+.contact-buttons .btn{
+  width: fit-content;
+  margin: 16px;
+}
+
+.contact-buttons .btn i{
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+
+@media queries screen and (max-width: 992px) {
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .logo-principal{
+    width: 50%;
+  }
+  .nav-bar{
+        justify-content: flex-end;
+  }
+  .navbar-nav li{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .subtitle-footer{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 18px;
+    width: 250px;
+  }
+  .footer-container .logo {
+    width: 200px;
+    height: 222px;
+  }
+  h1{
+    margin-top: 4rem;
+  }
+  .contact-form{
+  width: 90%;
+  margin: 0 auto;
+}
+}
