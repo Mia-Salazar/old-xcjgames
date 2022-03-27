@@ -48,7 +48,6 @@ h1{
   margin-top: 7rem;
   margin-bottom: 5rem;
   font-size: 5rem;
-
 }
 .goat-separator{
   border-top: 4px solid #188A2E;
@@ -150,6 +149,9 @@ iframe{
 .card-img-top {
   max-height: 185px;
   object-fit: contain;
+}
+.card-img-done {
+  object-fit: cover;
 }
 .google_badge{
   width: 60%;
@@ -278,6 +280,7 @@ iframe{
   }
   h1{
     margin-top: 4rem;
+    font-size: 48px;
   }
     .contact-form{
     width: 90%;
