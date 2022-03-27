@@ -121,22 +121,35 @@ iframe{
   color: #188A2E;
 }
 /*card*/
-/*.card .btn-secondary{
-  background-color:#188A2E;
-  font-family: 'Open Sans', sans-serif;
-  border: 0px solid #FFF;
-}
-.card .btn-secondary:hover{
-  background-color: #000;
-}*/
 .card{
-  margin-top: 2.5rem;
+  margin-top: 32px;
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 .card p{
   text-align: left;
+}
+.card-list {
+  margin-bottom: 0;
+  padding-left: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+.card-list, .card-list-item {
+  list-style-type: disc;
+}
+.card-list-item {
+  padding-left: 0;
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+.card-list-item:last-of-type {
+  padding-bottom: 0;
+}
+.card-img-top {
+  max-height: 185px;
+  object-fit: contain;
 }
 .google_badge{
   width: 60%;
@@ -241,11 +254,6 @@ iframe{
   margin-left: 10px;
 }
 
-
-@media queries screen and (max-width: 992px) {
- 
-}
-
 @media screen and (max-width: 600px) {
   .logo-principal{
     width: 50%;
@@ -271,8 +279,24 @@ iframe{
   h1{
     margin-top: 4rem;
   }
-  .contact-form{
-  width: 90%;
-  margin: 0 auto;
+    .contact-form{
+    width: 90%;
+    margin: 0 auto;
+  }
 }
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .card-img-top {
+    max-height: 255px;
+  }
+}
+
+@media (min-width: 1200px){
+  .card-img-top {
+    max-height: 200px;
+  }
+
+  .portfolio{
+    margin-bottom: 3rem;
+  }
 }
