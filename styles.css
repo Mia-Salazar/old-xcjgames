@@ -260,6 +260,20 @@ iframe{
   margin-left: 0.625rem;
 }
 
+/*video*/
+
+.video {
+  width: 275px;
+  height: 155px;
+}
+
+@media (min-width: 575px) {
+  .video {
+    width: 500px;
+    height: 281px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .logo-principal{
     width: 50%;
