@@ -38,7 +38,7 @@ li {
   list-style-type: none;
 }
 
-/*cabecera*/
+/*header*/
 .logo-principal{
   width: 25%;
   margin: auto;
@@ -46,19 +46,23 @@ li {
 }
 h1{
   margin-top: 7rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-size: 5rem;
 }
-.goat-separator{
+.text-separator{
   border-top: 0.25rem solid #188A2E;
   width: 15.625rem;
   margin-bottom: 2rem;
-margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 
 }
-.goat-separator-animation{
- animation: fadeInUp 1s ease-in-out 0s forwards; 
+.video-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 @keyframes fadeInUp {
   from { 
@@ -232,7 +236,7 @@ iframe{
   width: 75%;
 }
 
-/* contact me */
+/*contact me*/
 .contact-form{
   width: 40%;
   margin: 0 auto;
